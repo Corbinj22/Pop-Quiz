@@ -1,0 +1,44 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width:100%;
+  background-color: black;
+}
+
+.title {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  margin: .2em;
+}
+
+.title-img {
+  width: 30%;
+}
+
+.start-btn {
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #44c767 5%, #00ab67 100%);
+	background-color:#44c767;
+	border-radius:25px;
+	border:1px solid #2dc2d6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 7px #2f6627;
+}
+.start-btn:hover {
+	background:linear-gradient(to bottom, #00ab67 5%, #44c767 100%);
+	background-color:#00ab67;
+}
+.start-btn:active {
+	position:relative;
+	top:1px;
+}
