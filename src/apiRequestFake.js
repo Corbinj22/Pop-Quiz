@@ -1,6 +1,17 @@
 //This file was created in order to show an understanding of how to
-//import/export a file into the APP file and use the data.
-//Normally I would use an Async/Await in order to succesfully do this. 
+//import/export a file into the APP file and use the fetched data.
+//Normally I would use an Async/Await which would look something like below.
+
+// export const fetchedData = async () => {
+//   try {
+//     let response = await fetch('URL to Fetch From')
+//     let data = await response.json()
+//     return data
+//   }
+//   catch(error) {
+//     console.error(error);
+//   }
+// }
 
 export const fetchedData = [
   {
