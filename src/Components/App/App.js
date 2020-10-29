@@ -46,7 +46,7 @@ class App extends Component {
             <Welcome />
           </Route>
           <Route exact path='/pop-quiz'>
-            <GameView />
+            <GameView gameState={this.state}/>
           </Route>
         </Switch>
       </div>
