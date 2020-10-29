@@ -3,8 +3,13 @@ import './ScoreBox.css';
 
 const ScoreBox = () => {
   return (
-    <div className='ScoreBox-container'>
-      <p>meow</p>
+    <div className='scoreBox-container'>
+      <p>Pop Quiz</p>
+      <p>Right</p>
+      <p>0</p>
+      <p>Wrong</p>
+      <p>0</p>
+      <button>Reset</button>
     </div>
   )
 }
