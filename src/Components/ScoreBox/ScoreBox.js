@@ -1,14 +1,14 @@
 import React from 'react';
 import './ScoreBox.css';
 
-const ScoreBox = () => {
+const ScoreBox = ({ scores }) => {
   return (
     <div className='scoreBox-container'>
       <p>Pop Quiz</p>
       <p>Right</p>
-      <p>0</p>
+      <p>{scores.right}</p>
       <p>Wrong</p>
-      <p>0</p>
+      <p>{scores.wrong}</p>
       <button>Reset</button>
     </div>
   )
