@@ -29,6 +29,6 @@ Please delete options that are not relevant.
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
 ## Checklist:
-- [ ] My code follows the Turing style guidelines
+- [ ] My code follows a general styleguide
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
