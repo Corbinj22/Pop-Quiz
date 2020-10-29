@@ -1,3 +1,7 @@
+//This file was created in order to show an understanding of how to
+//import/export a file into the APP file and use the data.
+//Normally I would use an Async/Await in order to succesfully do this. 
+
 export const fetchedData = [
   {
     "question": "What was Tandem previous name?",
