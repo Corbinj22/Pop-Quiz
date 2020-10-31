@@ -9,8 +9,8 @@ class QuestionBox extends Component {
     }
   }
 
-  onChangeValue = (event) => {
-    this.setState({
+  onChangeValue = async (event) => {
+    await this.setState({
       selectedAnswer: event.target.value
     })
     console.log(this.state);
@@ -27,6 +27,10 @@ class QuestionBox extends Component {
             <input type="radio" value={this.props.questions[0].questionBank[1]} name="ans" /> {this.props.questions[0].questionBank[1]}
             <input type="radio" value={this.props.questions[0].questionBank[2]} name="ans" /> {this.props.questions[0].questionBank[2]}
             <input type="radio" value={this.props.questions[0].questionBank[3]} name="ans" /> {this.props.questions[0].questionBank[3]}
+          </div>
+          <div className='button-box'>
+            <button className='submit-button'>Submit</button>
+            <button className='next-button'>Next</button>
           </div>
         </div>
       )
