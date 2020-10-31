@@ -1,22 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './QuestionBox.css';
 
-const QuestionBox = ({ questions }) => {
+class QuestionBox extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedAnswer: null
+    }
+  }
 
-  let cycleQuestions = (
-      <div className='question-container'>
-        <p classname='current-question'>{questions[0].question}</p>
-        <ul className='answers'>
-          {questions[0].questionBank.map(item => (<li>{item}</li>))}
-        </ul>
-      </div>
-    )
+  onChangeValue = (event) => {
+    this.setState({
+      selectedAnswer: event.target.value
+    })
+    console.log(this.state);
+  }
 
-  return (
+
+  displayQuestions = () => {
+    if(this.props.questions && this.props.questions.length > 0) {
+      return (
+        <div className='head-question-box'>
+          <p>{this.props.questions[0].question}</p>
+          <div onChange={this.onChangeValue} className='question-bank'>
+            <input type="radio" value={this.props.questions[0].questionBank[0]} name="ans" /> {this.props.questions[0].questionBank[0]}
+            <input type="radio" value={this.props.questions[0].questionBank[1]} name="ans" /> {this.props.questions[0].questionBank[1]}
+            <input type="radio" value={this.props.questions[0].questionBank[2]} name="ans" /> {this.props.questions[0].questionBank[2]}
+            <input type="radio" value={this.props.questions[0].questionBank[3]} name="ans" /> {this.props.questions[0].questionBank[3]}
+          </div>
+        </div>
+      )
+    }
+  }
+
+
+  render () {
+    return (
     <div className='question-container'>
-      {cycleQuestions}
+      {this.displayQuestions()}
     </div>
-  )
+    )
+  }
 }
+
 
 export default QuestionBox;
