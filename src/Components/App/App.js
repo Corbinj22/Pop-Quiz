@@ -21,8 +21,22 @@ class App extends Component {
     await this.setState({
       questions: fetchedData
     })
-    await this.spoofData()
+    await this.spoofData();
   }
+
+  //Fisher–Yates Shuffle below(not original code)
+  arrayShuffle = (array) => {
+  var copy = [], n = array.length, i;
+  while (n) {
+    i = Math.floor(Math.random() * array.length);
+    if (i in array) {
+      copy.push(array[i]);
+      delete array[i];
+      n--;
+    }
+  }
+  return copy;
+};
 
   spoofData = () => {
     let spoofedData = this.state.questions.map(question => {
@@ -34,9 +48,9 @@ class App extends Component {
       return question
     })
     this.setState({
-      questions: spoofedData
+      questions: this.arrayShuffle(spoofedData)
     })
-  }
+  };
 
   render() {
     return (
@@ -50,9 +64,8 @@ class App extends Component {
           </Route>
         </Switch>
       </div>
-    );
+    )
   }
-}
-
+};
 
 export default App;

@@ -2,15 +2,19 @@ import React from 'react';
 import './QuestionBox.css';
 
 const QuestionBox = ({ questions }) => {
+
+  let cycleQuestions = (
+      <div className='question-container'>
+        <p classname='current-question'>{questions[0].question}</p>
+        <ul className='answers'>
+          {questions[0].questionBank.map(item => (<li>{item}</li>))}
+        </ul>
+      </div>
+    )
+
   return (
     <div className='question-container'>
-      <p>{questions[0].question}</p>
-      <div className='answers'>
-        <p>{questions[0].incorrect[0]}</p>
-        <p>{questions[0].incorrect[1]}</p>
-        <p>{questions[0].incorrect[2]}</p>
-        <p>{questions[0].correct}</p>
-      </div>
+      {cycleQuestions}
     </div>
   )
 }
