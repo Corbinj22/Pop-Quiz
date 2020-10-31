@@ -2,10 +2,21 @@
   display: flex;
   flex-direction: column;
   background-image: url("https://images.unsplash.com/photo-1581431886211-6b932f8367f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-  background-size: 47em;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #cccccc;
-  height: 100%;
+  height: 100vh;
   line-height: 400%;
   width: 75%;
+}
+
+.current-question {
+  text-align: center;
+  font-size: 1em;
+}
+
+.answers {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
