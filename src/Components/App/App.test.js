@@ -11,9 +11,9 @@ jest.mock('../../apiRequestFake')
 
 describe('<App />', () => {
   let fakeData;
+  const mockFn = jest.fn()
 
   beforeEach(() => {
-    const mockFn = jest.fn()
 
     fakeData = [
       {
@@ -38,8 +38,35 @@ describe('<App />', () => {
     const history = createMemoryHistory()
     const mockrender = render(<Router history={history}> <App /> </Router>)
     const { getByText, getByPlaceholderText } = mockrender
-    const title = screen.queryByLabelText('title')
-    expect(title).toBeInTheDocument()
+    expect(getByText('Pop Quiz')).toBeInTheDocument()
+  })
+
+  it('should let user start the game', async () => {
+    jest.resetAllMocks()
+    mockFn.mockResolvedValueOnce(fakeData)
+    const history = createMemoryHistory()
+    const mockrender = render(<Router history={history}> <App /> </Router>)
+    const { getByText, getByPlaceholderText } = mockrender
+    expect(getByText('Pop Quiz')).toBeInTheDocument()
+    const loginBtn = getByText('Start')
+
+    fireEvent.click(loginBtn)
+    expect(getByText('Right')).toBeInTheDocument()
+  })
+
+  it('should let user answer a question', async () => {
+    jest.resetAllMocks()
+    mockFn.mockResolvedValueOnce(fakeData)
+    const history = createMemoryHistory()
+    const mockrender = render(<Router history={history}> <App /> </Router>)
+    const { getByText, getByPlaceholderText } = mockrender
+    expect(getByText('Pop Quiz')).toBeInTheDocument()
+
+    const loginBtn = getByText('Start')
+    fireEvent.click(loginBtn)
+    expect(getByText('Right')).toBeInTheDocument()
+
+    const test = getByText("Thank You For Playing")
   })
 
 })

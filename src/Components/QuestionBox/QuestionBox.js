@@ -39,10 +39,10 @@ class QuestionBox extends Component {
         <div className='head-question-box'>
           <p lable='question' className='questionText'>{this.props.questions[0].question}</p>
           <div onChange={this.onChangeValue} className='question-bank'>
-            <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[0] ? true : false} className='questionText' value={this.props.questions[0].questionBank[0]} name="ans" /> {this.props.questions[0].questionBank[0]}<br></br>
-            <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[1] ? true : false} className='questionText' value={this.props.questions[0].questionBank[1]} name="ans" /> {this.props.questions[0].questionBank[1]}<br></br>
-            <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[2] ? true : false} className='questionText' value={this.props.questions[0].questionBank[2]} name="ans" /> {this.props.questions[0].questionBank[2]}<br></br>
-            <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[3] ? true : false} className='questionText' value={this.props.questions[0].questionBank[3]} name="ans" /> {this.props.questions[0].questionBank[3]}<br></br>
+            <input type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[0] ? true : false} className='answerText' value={this.props.questions[0].questionBank[0]} name="ans" readonly/> {this.props.questions[0].questionBank[0]}<br></br>
+            <input type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[1] ? true : false} className='answerText' value={this.props.questions[0].questionBank[1]} name="ans" readonly/> {this.props.questions[0].questionBank[1]}<br></br>
+            <input type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[2] ? true : false} className='answerText' value={this.props.questions[0].questionBank[2]} name="ans" readonly/> {this.props.questions[0].questionBank[2]}<br></br>
+            <input type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[3] ? true : false} className='answerText' value={this.props.questions[0].questionBank[3]} name="ans" readonly/> {this.props.questions[0].questionBank[3]}<br></br>
           </div>
           <div className='button-box'>
             <button className='submit-btn' onClick={() => this.handleSubmit()} disabled={this.props.beenSubmitted}>Submit Answer</button>
