@@ -37,9 +37,8 @@ class QuestionBox extends Component {
     if(this.props.questions && this.props.questions.length > 11) {
       return (
         <div className='head-question-box'>
-          <p className='questionText'>{this.props.questions[0].question}</p>
+          <p lable='question' className='questionText'>{this.props.questions[0].question}</p>
           <div onChange={this.onChangeValue} className='question-bank'>
-
             <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[0] ? true : false} className='questionText' value={this.props.questions[0].questionBank[0]} name="ans" /> {this.props.questions[0].questionBank[0]}<br></br>
             <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[1] ? true : false} className='questionText' value={this.props.questions[0].questionBank[1]} name="ans" /> {this.props.questions[0].questionBank[1]}<br></br>
             <input className='questionText' type="radio" checked={this.state.selectedAnswer === this.props.questions[0].questionBank[2] ? true : false} className='questionText' value={this.props.questions[0].questionBank[2]} name="ans" /> {this.props.questions[0].questionBank[2]}<br></br>
