@@ -6,8 +6,8 @@ import './GameView.css';
 const GameView = ({ gameState, checkAnswer, submitAnswer, cycleQuestion, resetBeenSubmitted }) => {
   return (
     <div className='GameView-container'>
-      <ScoreBox scores={gameState}/>
-      <QuestionBox checkAnswer={checkAnswer} questions={gameState.questions} cycleQuestion={cycleQuestion} resetBeenSubmitted={resetBeenSubmitted} submitAnswer={submitAnswer} beenSubmitted={gameState.beenSubmitted}/>
+      <ScoreBox scores={gameState} />
+      <QuestionBox checkAnswer={checkAnswer} right={gameState.right} questions={gameState.questions} cycleQuestion={cycleQuestion} resetBeenSubmitted={resetBeenSubmitted} submitAnswer={submitAnswer} beenSubmitted={gameState.beenSubmitted}/>
     </div>
   )
 }

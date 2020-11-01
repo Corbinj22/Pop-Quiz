@@ -14,7 +14,6 @@ class QuestionBox extends Component {
     await this.setState({
       selectedAnswer: event.target.value
     })
-    console.log(this.state);
   }
 
   handleSubmit = () => {
@@ -35,7 +34,8 @@ class QuestionBox extends Component {
   }
 
   displayQuestions = () => {
-    if(this.props.questions && this.props.questions.length > 0) {
+
+    if(this.props.questions && this.props.questions.length > 11) {
       return (
         <div className='head-question-box'>
           <p className='questionText'>{this.props.questions[0].question}</p>
@@ -54,7 +54,10 @@ class QuestionBox extends Component {
       )
     } else {
       return (
-        <p className='questionText'>Thank You For Playing</p>
+        <div>
+          <p className='questionText'>You got {this.props.right} out of 10 correct!</p>
+          <p className='questionText'>Thank You For Playing</p>
+        </div>
       )
     }
   }

@@ -11,7 +11,6 @@ const ScoreBox = ({ scores }) => {
         <p className='answer-count'>Wrong</p>
         <p className='answer-number'>{scores.wrong}</p>
       </div>
-      <button>Reset</button>
     </div>
   )
 }
