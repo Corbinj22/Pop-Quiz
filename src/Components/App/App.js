@@ -25,15 +25,17 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    await this.setData()
+    await this.setState({
+      questions: fetchedData
+    })
+    await this.spoofData();
   }
 
   cycleQuestion = () => {
-    let test = this.state.questions
-    test.shift()
-    console.log(test);
+    let currentQuestions = this.state.questions
+    currentQuestions.shift()
     this.setState({
-      questions: test
+      questions: currentQuestions
     })
   }
 
