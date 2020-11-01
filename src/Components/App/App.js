@@ -29,8 +29,17 @@ class App extends Component {
   }
 
   cycleQuestion = () => {
+    let test = this.state.questions
+    test.shift()
+    console.log(test);
     this.setState({
-      questions: this.state.questions.shift()
+      questions: test
+    })
+  }
+
+  resetBeenSubmitted = () => {
+    this.setState({
+       beenSubmitted: false
     })
   }
 
@@ -88,7 +97,7 @@ class App extends Component {
             <Welcome />
           </Route>
           <Route exact path='/pop-quiz'>
-            <GameView checkAnswer={this.checkAnswer} submitAnswer={this.submitAnswer} cycleQuestion={this.cycleQuestion} gameState={this.state}/>
+            <GameView checkAnswer={this.checkAnswer} submitAnswer={this.submitAnswer} cycleQuestion={this.cycleQuestion} resetBeenSubmitted={this.resetBeenSubmitted} gameState={this.state}/>
           </Route>
         </Switch>
       </div>
