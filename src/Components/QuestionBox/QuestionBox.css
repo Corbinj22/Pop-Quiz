@@ -24,10 +24,24 @@
 }
 
 .questionText {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .question-bank{
   display: inline-block;
   width: 100%;
+}
+
+.submit-btn:hover {
+  background: #00ab66;
+  text-decoration: none;
+}
+
+.next-btn:hover {
+  background: #00ab66;
+  text-decoration: none;
+}
+
+.next-btn:disabled {
+  text-decoration: none;
 }
