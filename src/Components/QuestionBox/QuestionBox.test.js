@@ -36,7 +36,7 @@ let fakeScores = {
 
   describe('<GameView />', () => {
     it('should display user game info', () => {
-      const { getByPlaceholderText, getByLabelText, debug } = render(<BrowserRouter> <QuestionBox /> </BrowserRouter>);
+      const { getByPlaceholderText, getByLabelText } = render(<BrowserRouter> <QuestionBox /> </BrowserRouter>);
       const question = screen.queryByLabelText('question')
     })
   })
