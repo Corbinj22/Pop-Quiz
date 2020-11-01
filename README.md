@@ -27,6 +27,15 @@ At the end of the 10 questions the user is notified of how many of the 10 items 
 6. run 'npm run test' to see tests.
 
 
+## Future Iterations
+1. Go further indepth with intergration testing. Through this I found that my React-Testing-Library knowledge had become rusty. 
+2. Refactor....Reafactor....Refactor.
+
+## Known Bugs
+Due to coming down with Corona virus mid-way though the challenge I was not able to track down and fix bugs. 
+Currently I am aware of two bugs. One being in the testing-library for the intergration APP. I cannot seem to grab ahold of my mocked API data and have it show. 
+The other bug I am aware of is that currently the answers to the quesitons are hardcoded in using the array index. Some of the data that is provided only has two answer, creating a blank answer when loaded. I would like to map through the Array being passed in with props and return an input for each value. 
+
 ## App Screenshots
 ### Login
 [![2020-11-01-14-18-57.gif](https://i.postimg.cc/3NHSh1G9/2020-11-01-14-18-57.gif)](https://postimg.cc/5YnqqwnF)
