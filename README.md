@@ -3,7 +3,7 @@
 Pop Quiz is a code submission for the 2020 Tandem Apprentice Software Engineer posistion. Canidates were challenged with creating a trivia game with a provided data set. 
 <br>
 
-There were no stric objectives, and canidates were given freeroam for styling and respective language/frameworks used.  
+There were no strict objectives, and canidates were given free roam for styling and respective language/frameworks used.  
 <br>
 
 Pop Quiz allows users to challenge themselves against a bank of 21 questions. 
