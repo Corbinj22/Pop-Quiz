@@ -31,6 +31,7 @@ At the end of the 10 questions the user is notified of how many of the 10 items 
 1. Go further indepth with intergration testing. Through this I found that my React-Testing-Library knowledge had become rusty. 
 2. Create Login for User
 3. Create reset button to start game over. 
+4. Set media querys for better scalability of resolution on different screen sizes. 
 2. Refactor....Reafactor....Refactor.
 
 ## Known Bugs
