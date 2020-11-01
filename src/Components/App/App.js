@@ -6,37 +6,65 @@ import './App.css';
 import Welcome from '../WelcomePage/Welcome';
 import GameView from '../GameView/GameView';
 
-
 class App extends Component {
   constructor() {
     super();
     this.state = {
       right: 0,
       wrong: 0,
-      questions: null
+      questions: null,
+      beenSubmitted: false
     }
   }
 
-  componentDidMount = async () => {
+  setData = async () => {
     await this.setState({
       questions: fetchedData
     })
     await this.spoofData();
   }
 
-  //Fisher–Yates Shuffle below(not original code)
-  arrayShuffle = (array) => {
-  var copy = [], n = array.length, i;
-  while (n) {
-    i = Math.floor(Math.random() * array.length);
-    if (i in array) {
-      copy.push(array[i]);
-      delete array[i];
-      n--;
+  componentDidMount = async () => {
+    await this.setData()
+  }
+
+  cycleQuestion = () => {
+    this.setState({
+      questions: this.state.questions.shift()
+    })
+  }
+
+  checkAnswer = (userAnswer) => {
+    if(userAnswer === this.state.questions[0].correct) {
+      this.setState({
+        right: this.state.right + 1
+      })
+    } else {
+      this.setState({
+        wrong: this.state.wrong + 1
+      })
     }
   }
-  return copy;
-};
+
+  submitAnswer = () => {
+    this.setState({
+      beenSubmitted: true
+    })
+  }
+
+  //Fisher–Yates Shuffle (not original code)//
+  arrayShuffle = (array) => {
+    var copy = [], n = array.length, i;
+    while (n) {
+      i = Math.floor(Math.random() * array.length);
+      if (i in array) {
+        copy.push(array[i]);
+        delete array[i];
+        n--;
+      }
+    }
+    return copy;
+  };
 
   spoofData = () => {
     let spoofedData = this.state.questions.map(question => {
@@ -60,7 +88,7 @@ class App extends Component {
             <Welcome />
           </Route>
           <Route exact path='/pop-quiz'>
-            <GameView gameState={this.state}/>
+            <GameView checkAnswer={this.checkAnswer} submitAnswer={this.submitAnswer} cycleQuestion={this.cycleQuestion} gameState={this.state}/>
           </Route>
         </Switch>
       </div>
