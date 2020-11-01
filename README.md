@@ -28,5 +28,11 @@ At the end of the 10 questions the user is notified of how many of the 10 items 
 
 
 ## App Screenshots
-### Login Page
+### Login
+[![2020-11-01-14-18-57.gif](https://i.postimg.cc/3NHSh1G9/2020-11-01-14-18-57.gif)](https://postimg.cc/5YnqqwnF)
+
+### Choosing Answer
+[![2020-11-01-14-19-40.gif](https://i.postimg.cc/1zkM0BvP/2020-11-01-14-19-40.gif)](https://postimg.cc/Y4x1M6cy)
+
+### End of Game
 [![2020-11-01-14-19-40.gif](https://i.postimg.cc/1zkM0BvP/2020-11-01-14-19-40.gif)](https://postimg.cc/Y4x1M6cy)
