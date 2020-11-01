@@ -16,6 +16,7 @@ At the end of the 10 questions the user is notified of how many of the 10 items 
 
 **Technologies Used:**
 *React*, *React Router*, *ES6*, *TDD*, *CSS*, *Mock Fetch API for receiving 3rd party data*
+
 **Framing:**
 https://www.figma.com/file/uQPTUYMJB4F0NRnoq85e0I/Untitled?node-id=0%3A1
 
