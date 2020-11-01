@@ -1,7 +1,6 @@
 .scoreBox-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height:100vh;
   width: 25%;
   color:white;
@@ -9,4 +8,16 @@
 
 .answer-count {
   padding-top: 2em;
+}
+
+.game-title {
+  font-size: 2.4em;
+}
+
+.answer-count {
+  font-size: 1.7em;
+}
+
+.answer-number {
+  font-size: 1.2em;
 }
