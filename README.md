@@ -29,4 +29,9 @@ At the end of the 10 questions the user is notified of how many of the 10 items 
 
 ## App Screenshots
 ### Login Page
-https://drive.google.com/file/d/1nbsI02jsITGcMPBQqbbNS6_Y804PYMYp/view?usp=sharing
+[2020-11-01-14-18-57.gif](https://postimg.cc/5YnqqwnF)
+
+
+### Choosing Answer
+[2020-11-01-14-19-40.gif](https://postimg.cc/Y4x1M6cy)
+
