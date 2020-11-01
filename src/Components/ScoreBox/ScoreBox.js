@@ -4,7 +4,7 @@ import './ScoreBox.css';
 const ScoreBox = ({ scores }) => {
   return (
     <div className='scoreBox-container'>
-    <p className='game-title'>Pop Quiz</p>
+    <p lable='title' className='game-title'>Pop Quiz</p>
       <div className='answer-count-box'>
         <p className='answer-count'>Right</p>
         <p className='answer-number'>{scores.right}</p>
