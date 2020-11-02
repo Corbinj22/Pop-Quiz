@@ -40,8 +40,7 @@ https://www.figma.com/file/uQPTUYMJB4F0NRnoq85e0I/Untitled?node-id=0%3A1
 
 ## Known Bugs
 Due to coming down with Corona virus mid-way though the challenge I was not able to track down and fix bugs. 
-Currently I am aware of two bugs. One being in the testing-library for the intergration APP. I cannot seem to grab ahold of my mocked API data and have it show. 
-The other bug I am aware of is that currently the answers to the quesitons are hardcoded in using the array index. Some of the data that is provided only has two answer, creating a blank answer when loaded. I would like to map through the Array being passed in with props and return an input for each value. 
+One bug is in the testing-library for the intergration APP. I cannot seem to grab ahold of my mocked API data and have it show. 
 
 ## App Screenshots
 ### Login
