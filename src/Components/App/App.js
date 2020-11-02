@@ -95,10 +95,10 @@ class App extends Component {
     return (
       <div className= "App" >
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/Pop-Quiz/'>
             <Welcome />
           </Route>
-          <Route exact path='/pop-quiz'>
+          <Route exact path='/Pop-Quiz/pop-quiz'>
             <GameView checkAnswer={this.checkAnswer} submitAnswer={this.submitAnswer} cycleQuestion={this.cycleQuestion} resetBeenSubmitted={this.resetBeenSubmitted} gameState={this.state}/>
           </Route>
         </Switch>
