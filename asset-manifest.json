@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pop-Quiz/static/css/main.d9267f8b.chunk.css",
+    "main.css": "/Pop-Quiz/static/css/main.3037d1b8.chunk.css",
     "main.js": "/Pop-Quiz/static/js/main.37b496d9.chunk.js",
     "main.js.map": "/Pop-Quiz/static/js/main.37b496d9.chunk.js.map",
     "runtime-main.js": "/Pop-Quiz/static/js/runtime-main.6e5bf814.js",
@@ -10,13 +10,13 @@
     "static/js/3.12518dff.chunk.js": "/Pop-Quiz/static/js/3.12518dff.chunk.js",
     "static/js/3.12518dff.chunk.js.map": "/Pop-Quiz/static/js/3.12518dff.chunk.js.map",
     "index.html": "/Pop-Quiz/index.html",
-    "static/css/main.d9267f8b.chunk.css.map": "/Pop-Quiz/static/css/main.d9267f8b.chunk.css.map",
+    "static/css/main.3037d1b8.chunk.css.map": "/Pop-Quiz/static/css/main.3037d1b8.chunk.css.map",
     "static/js/2.d347a58b.chunk.js.LICENSE.txt": "/Pop-Quiz/static/js/2.d347a58b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6e5bf814.js",
     "static/js/2.d347a58b.chunk.js",
-    "static/css/main.d9267f8b.chunk.css",
+    "static/css/main.3037d1b8.chunk.css",
     "static/js/main.37b496d9.chunk.js"
   ]
 }
